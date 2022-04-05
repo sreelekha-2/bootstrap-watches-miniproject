@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class=" sticky-top mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.freepnglogos.com/uploads/watch-png/download-wall-watch-png-photos-for-designing-projects-24.png"
+                        class="watch-logo rounded-circle">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample">
+                    <ul class="navbar-nav ms-auto me-2">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link text-white" href="watches.html">Watches</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#footer">Follow Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cart"><i
+                                    class="fa-solid fa-cart-shopping position-relative"><sup
+                                        class="position-absolute top-0 start-5 rounded-pill badge bg-danger"
+                                        id="cartCount">0</sup></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#offcanvasexample" class="btn btn-primary" data-bs-toggle="offcanvas">Watches List</a>
+                    <div class="offcanvas offcanvas-start" id="offcanvasexample">
+                        <div class="offcanvas-header">
+                            <h2 class="offcanvas-titile">Watches</h2>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#fastrack" class="btn btn-outline-info">Fastrack Watches</a></li>
+                                <li class="mb-2"><a href="#rolex" class="btn btn-outline-info">Rolex watches</a></li>
+                                <li class="mb-2"><a href="#smartwatches" class="btn btn-outline-info">Smart Watches</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container my-2">
+            <div class="row" id="fastrack">
+                <h2>Fastrack Watches</h2>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="fastrackSilver">
+                    <img src="images/fastrack-silver-watch.jpg" alt="fastrack silver watch" class="watch-img">
+                    <p>Men's Fastarck black dial silver chronograpgh watch</p>
+                    <h5>Rs.1255</h5>
+                    <p>Color:Silver</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(fastrackSilver)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+
+
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="fastrackBrown">
+                    <img src="images/men-fastrack-belt.jpg" class="watch-img" alt="fastrack brown belt watch">
+                    <p>Men's Fastrack brown color black dial belt watch</p>
+                    <h5>Rs.1155</h5>
+                    <p>Color:Brown</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(fastrackBrown)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+
+                </div>
+                <div class="watch-card text-center col-12  col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="fastrackBlack">
+                    <img src="images/fastrack-analog-black.jpg" class="watch-img" alt="fastrack black watch">
+
+                    <p>Men's Fastrack black color black dial analog men watch</p>
+                    <h5>Rs.1555</h5>
+                    <p>Color:Black</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(fastrackBlack)">Add
+                        to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3  my-4" id="fastrackGrey">
+                    <img src="images/fastarck-lightgray.jpg" class="watch-img" alt="fastrack grey watch">
+
+                    <p>Men's Fastrack light grey color black dial belt watch</p>
+                    <h5>Rs 1655</h5>
+                    <p>Color:Lightgrey</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(fastrackGrey)">Add
+                        to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+
+
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="fastrackParty">
+                    <img src="images/fastrack-party-analog.jpg" class="watch-img" alt="fastrack party watch">
+
+                    <p>Men's Fastarck silver dial party analog watch </p>
+                    <h5>Rs.2255</h5>
+                    <p>Color:Silver</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(fastrackParty)">Add
+                        to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+
+
+                </div>
+            </div>
+
+            <div class="row" id="rolex">
+                <h2>Rolex Watches</h2>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="rolexLeather">
+                    <img src="images/rolex-leather.jpg" class="watch-img" alt="chocolate dial belt rolex">
+                    <p>Men's Rolex chocolate dial leather belt watch</p>
+                    <h5>Rs.999</h5>
+                    <p>Color:Black</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(rolexLeather)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="rolexBlack">
+                    <img src="images/rolex-black.jpg" class="watch-img" alt="white dial belt rolex">
+                    <p>Men's Rolex white dial black belt watch</p>
+                    <h5>Rs.1299</h5>
+                    <p>Color:Black</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(rolexBlack)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="rolexGold">
+                    <img src="images/rolex-blue-dial.jpg" class="watch-img" alt="blue dial gold rolex">
+                    <p>Men's Rolex gold color blue dial belt watch</p>
+                    <h5>Rs.1499</h5>
+                    <p>Color:Gold</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(rolexGold)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="rolexSilver">
+                    <img src="images/rolex-silver-blue-dial.jpg" class="watch-img" alt="blue dial silver rolex">
+                    <p>Men's Rolex silver color blue dial watch</p>
+                    <h5>Rs.1599</h5>
+                    <p>Color:Silver</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(rolexSilver)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4" id="rolexWrist">
+                    <img src="images/rolex-watches-wrist.jpg" class="watch-img" alt="silver wrist rolex">
+                    <p>Men's Rolex silver color black dial watch</p>
+                    <h5>Rs.1699</h5>
+                    <p>Color:Silver</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(rolexWrist)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="row" id="smartwatches">
+                <h2>Smartwatches</h2>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="smartWatchBlack">
+                    <img src="images/smartwatch-black.jpg" class="watch-img" alt="smart watch black">
+                    <p>Men's Smartwatch black color black dial watch</p>
+                    <h5>Rs.2099</h5>
+                    <p>Color:Black</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(smartWatchBlack)">Add
+                        to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="smartWatchBlue">
+                    <img src="images/smartwatch-blue.jpg" class="watch-img" alt="smart watch blue">
+                    <p>Men's Smartwatch blue color black dial watch</p>
+                    <h5>Rs.2399</h5>
+                    <p>Color:Blue</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(smartWatchBlue)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="smartWatchGrey">
+                    <img src="images/smartwatch-grey.jpg" class="watch-img" alt="smart watch grey">
+                    <p>Men's Smartwatch grey color black dial watch</p>
+                    <h5>Rs.2599</h5>
+                    <p>Color:Grey</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(smartWatchGrey)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="smartWatchPink">
+                    <img src="images/smartwatch-pink.jpg" class="watch-img" alt="smart watch pink">
+                    <p>Men's Smartwatch pink color black dial watch</p>
+                    <h5>Rs.2799</h5>
+                    <p>Color:Pink</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(smartWatchPink)">Add to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+                <div class="watch-card text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4"
+                    id="smartWatchWhite">
+                    <img src="images/smartwatch-white.jpg" class="watch-img" alt="smart watch white">
+                    <p>Men's Smartwatch white color black dial watch</p>
+                    <h5>Rs.2999</h5>
+                    <p>Color:White</p>
+                    <button class="btn btn-warning d-block w-75 mx-auto my-3" onclick="addToCart(smartWatchWhite)">Add
+                        to
+                        cart</button>
+                    <button class="btn btn-danger d-block w-75 mx-auto my-3">Buy Now</button>
+                </div>
+
+            </div>
+
+            <h1 class="text-center">Cart</h1>
+            <div id="cart" class="text-center">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-dark text-center py-3" id="footer">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-start">
+
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-facebook-f text-white"></i></a>
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-twitter text-white"></i></a>
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-google text-white"></i></a>
+                <a href="#" class="bg-primary py-2 px-3 m-2 text-center rounded-circle"><i
+                        class="fa-brands fa-instagram text-white"></i></a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="text-white">trustwatches@orders.com</p>
+                <p class="text-white">Chilakala Guda, Secundarabad, Hyderabad, Telangana, || 500-000,
+                    support(9876543210)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
